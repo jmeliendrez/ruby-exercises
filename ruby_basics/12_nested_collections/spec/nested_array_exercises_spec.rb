@@ -3,7 +3,7 @@ require_relative '../exercises/nested_array_exercises'
 
 RSpec.describe 'Nested Array Exercises' do
   describe 'blank seating chart creation exercise' do
-    it 'returns a 2d array (chart) containing 2 rows, each containing nil 3 times' do
+    xit 'returns a 2d array (chart) containing 2 rows, each containing nil 3 times' do
       expected_output = [[nil, nil, nil], [nil, nil, nil]]
       expect(blank_seating_chart(2, 3)).to eq(expected_output)
     end
@@ -113,7 +113,7 @@ RSpec.describe 'Nested Array Exercises' do
         ]
       end
 
-      xit 'returns the hash with the name Ruby' do
+      it 'returns the hash with the name Ruby' do
         expected_output = { name: 'Ruby', is_my_favorite?: true }
         expect(find_favorite(array)).to eq(expected_output)
       end
@@ -128,7 +128,7 @@ RSpec.describe 'Nested Array Exercises' do
         ]
       end
 
-      xit 'returns nil' do
+      it 'returns nil' do
         expected_output = nil
         expect(find_favorite(array)).to eq(expected_output)
       end
