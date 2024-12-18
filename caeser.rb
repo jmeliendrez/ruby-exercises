@@ -6,13 +6,12 @@ puts string + ": needs to shift #{shift.to_s} places to the right\n"
 def shifter (string, shift = 0)
   # convert string letters to array of ASCII table numbers
   ascii_num = string.split('').collect {|letter| letter.ord}
-    
-  p ascii_num
 
+  # Shift letters right while avoiding special chars
   shifted = ascii_num.map do |num| 
+    # check if the number represents letter, if so shift it
     if num >= 65 && num <=90 || num >=97 && num <=122
-      # need to figuer out how to jump from 90->97 
-      # and how to wrap while keeping case
+      # need to figure out how to wrap from a-z and A-Z
       num = num + shift
     else
       num
