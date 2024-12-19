@@ -19,7 +19,7 @@ def shifter (string, shift = 0)
   end
   p shifted 
 
-  # output = shifted.map {|c| c.chr}
+  # output = shifted.map {|c| c.chr} #chr converts integer to ascii equivalent
   # p output
 end
 
